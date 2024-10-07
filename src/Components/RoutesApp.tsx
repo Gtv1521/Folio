@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "../Routes/Home"
 // import About from "../Routes/About"
 import Blog from "../Routes/Blog"
-import Nav from "./Nav"
+// import Nav from "./Nav"
 
 
 function RoutesApp() {

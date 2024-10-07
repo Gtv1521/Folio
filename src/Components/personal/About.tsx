@@ -5,7 +5,7 @@ function About() {
         <div>
             <h3><strong>Sobre mi</strong></h3>
             <p>
-                Soy un desarrollador web y diseñador responsivo, con experiencia en React y HTML/CSS. Me gusta trabajar en equipo y aprender constantemente.
+                Soy un desarrollador web y diseñador responsivo, con experiencia .Net(C#), ASP.Net framework, aplicaciones Blazor(Razor) y aplicaciones MVC. Me gusta trabajar en equipo y aprender constantemente.
             </p>
             <p>
                 Mi objetivo es crecer profesionalmente y desarrollar habilidades en el área de tecnología.
