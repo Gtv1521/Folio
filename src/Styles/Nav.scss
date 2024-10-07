@@ -1,0 +1,84 @@
+@use 'variables';
+
+.content-navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: variables.$Segundo;
+    box-shadow: 2px 1px 8px variables.$Blanco;
+    // border-radius: 10px;
+
+    & .nav-menu ul {
+        display: flex;
+        list-style: none;
+        // padding-right: 10px;
+
+        & li>a {
+            color: variables.$LetrasBlancas;
+            text-decoration: none;
+            padding: 10px 10px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: variables.$Azul;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.logo>a {
+    width: 100%;
+    font-size: 2rem;
+    color: variables.$LetrasBlancas;
+    text-decoration: none;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+// Cambio de tamaños para pantallas mas pequeñas 
+
+@media screen and (min-width: 30px) and (max-width: 564px) {
+    .content-navbar {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        & .nav-menu {
+            width: 100%;
+            align-items: center;
+            height: 30px;
+
+            & ul {
+                width: 80%;
+                height: 30px;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            & li {
+                padding: 20px;
+            }
+
+            & li>a {
+                color: variables.$LetrasBlancas;
+                text-decoration: none;
+                margin: auto;
+                padding: 10px 15px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .logo {
+        width: 100%;
+        font-size: 1.5rem;
+        color: variables.$LetrasBlancas;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}

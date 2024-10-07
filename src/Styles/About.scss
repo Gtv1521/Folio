@@ -1,0 +1,103 @@
+@use 'variables';
+
+.contenedor-about {
+    width: 95%;
+    height: 805h;
+    margin: 0 auto 0 auto;
+    display: flex;
+    overflow-y: auto;
+    padding: 25px 34px 20px 34px;
+
+    & .about {
+        width: 65%;
+        display: block;
+        margin-top: 10px;
+
+        & .description-profile {
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            background-color: variables.$Azul;
+            border-radius: 20px;
+            color: variables.$LetrasBlancas;
+            box-shadow: 0 0 8px variables.$Blanco;
+
+            & p {
+                text-align: justify;
+                width: 95%;
+                margin: auto;
+                padding: 10px;
+            }
+
+            & .body-about {
+                font-size: 1rem;
+                font-weight: 700;
+                text-align: justify;
+                padding: 50px 30px;
+
+                & a {
+                    color: variables.$Blanco;
+                }
+            }
+        }
+
+        & .iconos {
+            width: 98%;
+            margin: 20px auto 0 auto;
+            // padding: 30px 25px;
+            background-color: variables.$Azul;
+            text-align: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0 0 8px variables.$Blanco;
+
+            & .lista-iconos {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                text-align: center;
+
+                & li {
+                    margin: auto;
+                    list-style: none;
+
+                    &>* {
+                        border: 1px solid variables.$Azul;
+                        width: 40px;
+                        height: 40px;
+                        padding: 5px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .tecnologias {
+        width: 35%;
+        display: flex;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (min-width: 30px) and (max-width: 564px) {
+    .contenedor-about {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+
+        & .tecnologias {
+            display: flex;
+            width: 99%;
+            margin: 0;
+            padding: 0;
+        }
+
+        & .about {
+            width: 94%;
+            margin: auto;
+        }
+    }
+}

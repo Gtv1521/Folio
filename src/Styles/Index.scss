@@ -1,0 +1,14 @@
+@use 'variables';
+
+@use 'Nav';
+@use 'Card';
+@use 'Home';
+@use 'About';
+@use 'Welcome';
+
+
+.App {
+    background-color: variables.$Segundo;
+    min-width: 100%;
+    min-height: 100vh;
+}

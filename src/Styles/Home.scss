@@ -1,0 +1,100 @@
+@use 'variables.scss' as var;
+
+.contenedor-home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100vh;
+    background: url(https://images5.alphacoders.com/370/370573.jpg), var.$Primero ;
+    // font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        background-color: var.$Primero;
+        margin: auto;
+        height: 70%;
+        width: 80%;
+        border: 2px solid var.$Blanco;
+        border-radius: 30px;
+        padding: 40px;
+        text-align: center;
+        opacity: .8;
+        box-shadow: 10px 10px 5px rgb(117, 66, 66);
+
+        & .box {
+            width: 70%;
+            margin: auto;
+        }
+
+        & .name {
+            font-size: 42px;
+            color: var.$Segundo;
+            width: 70%;
+            margin: 50px auto 0 auto;
+            border-bottom: 3px solid var.$Segundo;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.7);
+                border-bottom: 1px solid var.$Segundo;
+
+            }
+        }
+
+        & .description {
+            margin: 10px auto;
+            width: 80%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background-color: red;
+
+            & h3 {
+                color: var.$LetrasNegras;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+
+        & .enlaces {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-around;
+
+            & button {
+                color: var.$LetrasAzules;
+                text-decoration: none;
+                transition: transfor 0.3s ease;
+                border: none;
+                border-radius: 15px;
+                font-size: 18px;
+                padding: 10px 15px;
+                font-weight: 600;
+                box-shadow: 10px 10px 5px rgb(110, 54, 54);
+                
+                &:hover {
+                    background-color: var.$AzulOscuro;
+                    color: var.$Blanco;
+                    // transform:scale(1.3);
+                    // font-weight: 600;
+                }
+            }
+
+
+        }
+    }
+}
+
+.title-contact {
+    font-size: 25px;
+    margin-bottom: 20px;
+    // color: var.$LetrasAzules;
+}
+.contact {
+    text-align: start;
+}
