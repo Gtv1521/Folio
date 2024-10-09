@@ -25,6 +25,15 @@ function Home() {
         }
     }
 
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = 'https://github.com/Gtv1521/Gtv1521/raw/master/src/curriculum/Curriculum-GustavoBernal.pdf';
+        link.setAttribute('download', 'Curriculum-GustavoBernal.pdf');
+        // document.body.appendChild(link);
+        link.click();
+        // document.body.removeChild(link);
+      };
+
     return (
         <div className='contenedor-home'>
             <div className="container">
@@ -42,6 +51,7 @@ function Home() {
                         <Link to="/Blog">
                             <button onClick={() => setSelectedComponent("contact")}> Proyectos</button>
                         </Link>
+                        <button onClick={handleDownload}> Curriculum</button>
                     </div>
                 </div>
 
