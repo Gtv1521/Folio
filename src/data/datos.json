@@ -1,7 +1,89 @@
 {
-    "Enlaces": {
-        "Url": "https://www.facebook.com/",
-        "Image": "NaNa",
-        "Description": "Esta realizado en React pensado para mostrar los proyectos realizados y que los interesados puedan interactuar con las diferentes funciones que se le agregaron a esta aplicacion"
-    }
+    "backend": [
+        {
+            "id": 1,
+            "title": "Albums",
+            "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728519909/Portafolio/lvutfzvrxbudf1rstkjx.png",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        },
+        {
+            "id": 2,
+            "title": "Notas",
+            "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        },
+        {
+            "id": 2,
+            "title": "Notas",
+            "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        },
+        {
+            "id": 2,
+            "title": "Notas",
+            "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        },
+        {
+            "id": 2,
+            "title": "Notas",
+            "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        }    
+
+    ],
+    "frontend": [
+        {
+            "id": 1,
+            "title": "Notas",
+            "image": "urlnose",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        }
+    ],
+    "Monoliticas": [
+        {
+            "id": 1,
+            "title": "Plantas",
+            "image": "urlnose",
+            "url": "https://www.facebook.com/",
+            "description": "Esta es una aplicacion creada con Blazor .Net Core, se usa para gestion de targetas de plantas donde lo que se busca es centralizacion de los datos, y pues que se pueda consultar las enfermedades mas comunes los tratamientos que se les da los cultivos y menejo de plagas y enfermedades",
+            "description1": "",
+            "description2": "",
+            "description3": ""
+        },
+        {
+            "id": 1,
+            "title": "Restaurante",
+            "image": "urlnose",
+            "url": "https://www.facebook.com/",
+            "description": "Es una aplicacion web hecha totalmente en NodeJs con express y la base de datos que usa esta en un servidor de mysql ",
+            "description1": "La aplicacion fue pensada para el manejo de un restaurante, que pudieran hacer manejo de las mesas y manejo de los datos que venden donde las facturas los",
+            "description2": "",
+            "description3": ""
+        }
+    ]
 }

@@ -1,8 +1,11 @@
 import React from 'react'
+// import Target from '../Components/blog/Target'
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <div>
+      Hola
+    </div>
   )
 }
 

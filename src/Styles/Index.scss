@@ -1,14 +1,28 @@
-@use 'variables';
+@use 'variables' as var;
 
-@use 'Nav';
-@use 'Card';
-@use 'Home';
-@use 'About';
-@use 'Welcome';
+@use './components/Nav';
+@use './components/Card';
+@use './routes/Home';
+@use './routes/Projects';
+@use './components/About';
+@use './components/Welcome';
+@use './components/Targeta';
 
 
 .App {
-    background-color: variables.$Segundo;
+    background-color: var.$Segundo;
     min-width: 100%;
     min-height: 100vh;
+    background: url(https://images5.alphacoders.com/370/370573.jpg), var.$Primero ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (200px <= width <= 1366px) {
+    body {
+        font-size: 15px;
+        font-weight: 500;
+    }
 }

@@ -1,15 +1,17 @@
-function Target() {
+//  Aqui es donde se crean las targetas de enlace a cada uno de los proyectos
+import { IProject } from "../../types/Interfaces"
+
+function Target(IProject: IProject) {
     return (
-        <div className="">
-            <h2>Title</h2>
-            <div className="">
-                <div className="imagen">
-                    <img src="" alt="" />
+        <div className="box-targeta">
+            {
+                <div className="contenedor-target">
+                    <img src={IProject.image} alt=""/>
+                    <h2>{IProject.title}</h2>
+                    <p>{IProject.description}</p>
                 </div>
-                <div className="description">
-                    Descripcion del proyecto que se esta mostrando ademas que se pone en enlace a donde va la respectiva pagina que se esta creando 
-                </div>
-            </div>
+
+            }
         </div>
     )
 }

@@ -1,12 +1,17 @@
 import React from 'react'
-import Foto from '../../img/Foto.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+// import Foto from '../../img/Foto.png'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function Card() {
   return (
     <div className='Card'>
-      <section className='image'>
+
+
+        primavera
+
+      
+      {/* <section className='image'>
         <img src="https://res.cloudinary.com/djtxchura/image/upload/v1722180041/Portafolio/jvossaou4odu2ahgyqoj.png" alt="" />
       </section>
       
@@ -45,7 +50,7 @@ function Card() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
