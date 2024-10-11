@@ -8,6 +8,7 @@ function Blog() {
   const productId = id ? parseInt(id, 10) : 0;
   const [categoria, setCategoria] = useState(1);
 
+  // hace paso del id para una de las categorias
   useEffect(() => {
     if (productId <= 5) {
       setCategoria(1);
@@ -18,6 +19,7 @@ function Blog() {
     }
   }, [productId])
 
+  // Se corre un switch para que pueda diferenciar en donde esta el id que se busca
   function Busca(): any {
     switch (categoria) {
       case 1:
@@ -32,6 +34,7 @@ function Blog() {
   }
 
   const informacion = Busca(); // se le pasa la consulta a una variable para que pueda ser usada en el DOM
+
   return (
     <div>
       {informacion ? (

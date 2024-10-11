@@ -9,8 +9,10 @@ function Target(IProject: IProject) {
                 {
                     <div className="contenedor-target">
                         <img src={IProject.image} alt="" />
-                        <h2>{IProject.title}</h2>
-                        <p>{IProject.description}</p>
+                        <div className="contain">
+                            <p className="titulo">{IProject.title}</p>
+                            <p className="description">{IProject.description}</p>
+                        </div>
                     </div>
                 }
             </Link>

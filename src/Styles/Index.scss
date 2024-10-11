@@ -11,8 +11,10 @@
 
 .App {
     background-color: var.$Segundo;
-    min-width: 100%;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
     background: url(https://images5.alphacoders.com/370/370573.jpg), var.$Primero ;
     background-size: cover;
     background-position: center;
