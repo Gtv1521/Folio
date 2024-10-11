@@ -14,7 +14,7 @@
         flex-direction: column;
         background-color: var.$Primero;
         margin: auto;
-        height: 70%;
+        height: auto;
         width: 80%;
         border: 2px solid var.$Blanco;
         border-radius: 30px;
@@ -64,18 +64,22 @@
             margin: 30px auto;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
+
 
             & button {
                 color: var.$LetrasAzules;
                 text-decoration: none;
                 transition: transfor 0.3s ease;
                 border: none;
+                margin: 10px;
+
                 border-radius: 15px;
                 font-size: 18px;
                 padding: 10px 15px;
                 font-weight: 600;
                 box-shadow: 10px 10px 5px rgb(110, 54, 54);
-                
+
                 &:hover {
                     background-color: var.$AzulOscuro;
                     color: var.$Blanco;
@@ -94,6 +98,57 @@
     margin-bottom: 20px;
     // color: var.$LetrasAzules;
 }
+
 .contact {
     text-align: start;
+}
+
+
+@media screen and (min-width: 30px) and (max-width: 564px) {
+    .contenedor-home {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        // padding: 0%;
+        // display: none !important;
+        align-items:start !important;
+        position: relative;
+        top: 40px;
+        // justify-content: center;
+
+        & .container {
+            width: 90%;
+            height: 80vh;
+            padding: 5px;
+            margin: 0;
+
+            & .box {
+                width: 98%;
+            }
+
+            & .name {
+                padding: 0;
+                width: 100%;
+                font-size: 30px;
+            }
+
+            & .description {
+                width: 98%;
+            }
+
+            & .enlaces {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                flex-wrap: wrap;
+
+                & button {
+                    margin: 10px;
+                }
+
+
+            }
+        }
+    }
+
 }

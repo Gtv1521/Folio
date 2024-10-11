@@ -1,10 +1,11 @@
 // Definir una interfaz para los proyectos
 export interface IProject {
-    id: number | any;
+    id: number;
     title: string;
     image: string;
     url: string;
-    description: string;
-    description2?: string;
-    description3?: string;
+    description?: string;
+    descriptionUno?: string;
+    descriptionDos?: string;
+    descriptionTres?: string;
   }
