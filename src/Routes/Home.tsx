@@ -30,27 +30,25 @@ function Home() {
         link.href = 'https://github.com/Gtv1521/Gtv1521/raw/master/src/curriculum/Curriculum-GustavoBernal.pdf';
         link.setAttribute('download', 'Curriculum-GustavoBernal.pdf');
         link.click();
-    };
+      };
 
     return (
         <div className='contenedor-home'>
             <div className="container">
                 <div className="box">
-                    <div className="collecion">
-                        <h1 className="name">Gustavo Bernal Acero</h1>
+                    <h1 className="name">Gustavo Bernal Acero</h1>
 
-                        <div className="description">
-                            {renderComponent()}
-                        </div>
-                        <div className="enlaces">
-                            <button onClick={() => setSelectedComponent("home")}> Home</button>
-                            <button onClick={() => setSelectedComponent("about")}> Sobre mi</button>
-                            <button onClick={() => setSelectedComponent("contact")}> Contacto</button>
-                            <Link to="/projects">
-                                <button onClick={() => setSelectedComponent("contact")}> Proyectos</button>
-                            </Link>
-                            <button onClick={handleDownload}> Curriculum</button>
-                        </div>
+                    <div className="description">
+                        {renderComponent()}
+                    </div>
+                    <div className="enlaces">
+                        <button onClick={() => setSelectedComponent("home")}> Home</button>
+                        <button onClick={() => setSelectedComponent("about")}> Sobre mi</button>
+                        <button onClick={() => setSelectedComponent("contact")}> Contacto</button>
+                        <Link to="/projects">
+                            <button onClick={() => setSelectedComponent("contact")}> Proyectos</button>
+                        </Link>
+                        <button onClick={handleDownload}> Curriculum</button>
                     </div>
                 </div>
 

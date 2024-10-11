@@ -6,7 +6,7 @@
     height: 100vh;
     margin-top: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@
 
                 & .description {
                     margin: 10px auto;
-                    width: 80%;
+                    width: 60%;
                     height: 45vh;
                     display: flex;
                     justify-content: center;
@@ -70,7 +70,7 @@
                 }
 
                 & .enlaces {
-                    width: 90%;
+                    width: 70%;
                     margin: 30px auto;
                     display: flex;
                     justify-content: space-around;
