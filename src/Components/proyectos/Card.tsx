@@ -1,5 +1,8 @@
 import React from 'react'
 import { IProject } from '../../types/Interfaces'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
 // import Foto from '../../img/Foto.png'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -7,10 +10,20 @@ import { IProject } from '../../types/Interfaces'
 function Card(IProject: IProject) {
   return (
     <div className='container'>
+
       {
         // este modulo va a mostrar todos los datos puntuales de cada proyecto 
         <div className="container-row">
-          <h1>{IProject.title}</h1>
+          <div className="cabezera">
+            <div className="volvera">
+              <Link className='icon' to="/projects">
+                <FontAwesomeIcon className='icono' icon={faCircleChevronLeft} />
+              </Link>
+            </div>
+            <div className="titulo">
+              <h1>{IProject.title}</h1>
+            </div>
+          </div>
 
           <div className="dashboard">
             <div className="image">

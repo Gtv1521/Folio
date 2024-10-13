@@ -23,9 +23,9 @@
 
         & .box {
             background-color: var.$Primero;
-            width: 80%;
-            min-height: 70%;
-            height: auto;
+            width: 70%;
+            min-height: 60%;
+            // max-height: 70%;
             margin: auto;
 
 
@@ -39,63 +39,63 @@
             box-shadow: 10px 10px 5px rgb(117, 66, 66);
 
 
-                & .name {
-                    font-size: 42px;
-                    color: var.$Segundo;
-                    width: 70%;
-                    margin: 50px auto 0 auto;
-                    border-bottom: 3px solid var.$Segundo;
-                    transition: transform 0.3s ease;
+            & .name {
+                font-size: 42px;
+                color: var.$Segundo;
+                width: 70%;
+                margin: 50px auto 0 auto;
+                border-bottom: 3px solid var.$Segundo;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.4);
+                    border-bottom: 1px solid var.$Segundo;
+
+                }
+            }
+
+            & .description {
+                margin: 10px auto;
+                width: 60%;
+                height: 45vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & h3 {
+                    color: var.$LetrasNegras;
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            & .enlaces {
+                width: 70%;
+                margin: 30px auto;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+
+                & button {
+                    color: var.$LetrasAzules;
+                    text-decoration: none;
+                    transition: transfor 0.3s ease;
+                    border: none;
+                    margin: 10px;
+
+                    border-radius: 15px;
+                    font-size: 18px;
+                    padding: 10px 15px;
+                    font-weight: 600;
+                    box-shadow: 10px 10px 5px rgb(110, 54, 54);
 
                     &:hover {
-                        transform: scale(1.4);
-                        border-bottom: 1px solid var.$Segundo;
-
+                        background-color: var.$AzulOscuro;
+                        color: var.$Blanco;
                     }
                 }
-
-                & .description {
-                    margin: 10px auto;
-                    width: 60%;
-                    height: 45vh;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    & h3 {
-                        color: var.$LetrasNegras;
-                        font-size: 24px;
-                        margin-bottom: 15px;
-                    }
-                }
-
-                & .enlaces {
-                    width: 70%;
-                    margin: 30px auto;
-                    display: flex;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-
-
-                    & button {
-                        color: var.$LetrasAzules;
-                        text-decoration: none;
-                        transition: transfor 0.3s ease;
-                        border: none;
-                        margin: 10px;
-
-                        border-radius: 15px;
-                        font-size: 18px;
-                        padding: 10px 15px;
-                        font-weight: 600;
-                        box-shadow: 10px 10px 5px rgb(110, 54, 54);
-
-                        &:hover {
-                            background-color: var.$AzulOscuro;
-                            color: var.$Blanco;
-                        }
-                    }
-                }
+            }
         }
     }
 }
@@ -112,47 +112,49 @@
 
 
 // @media screen and (min-width: 30px) and (max-width: 564px) {
-    @media (30px <= width <= 1024px) {
+@media (30px <=width <=1024px) {
     .contenedor-home {
         width: 100%;
         min-height: 100vh;
-        height: auto;
         align-items: start !important;
         position: relative;
-        // justify-content: center;
 
         & .container {
             width: 90%;
             height: 80vh;
             padding: 2px;
-            margin: 0;
+            margin: 20px auto !important;
 
             & .box {
                 width: 98%;
-                padding: 8px;
-            }
-            & .name {
-                padding: 0;
-                width: 100%;
-                font-size: 25px;
-            }
+                padding: 10px;
+                
 
-            & .description {
-                width: 98%;
-                font-size: 14px;
-            }
+                & .name {
+                    padding: 0;
+                    width: 90%;
+                    font-size: 35px;
+                }
 
-            & .enlaces {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                flex-wrap: wrap;
+                & .description {
+                    width: 90%;
+                    min-height: 400px;
+                    height: auto;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
 
-                & button {
-                    margin: 10px;
+                & .enlaces {
+                    margin: 10px auto 20px auto;
+                    padding: 0;
+                    width: 100%;
+                    flex-wrap: wrap;
+
+                    & button {
+                        margin: 10px;
+                    }
                 }
             }
         }
     }
-
 }

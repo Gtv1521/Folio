@@ -30,7 +30,7 @@ function Home() {
         link.href = 'https://github.com/Gtv1521/Gtv1521/raw/master/src/curriculum/Curriculum-GustavoBernal.pdf';
         link.setAttribute('download', 'Curriculum-GustavoBernal.pdf');
         link.click();
-      };
+    };
 
     return (
         <div className='contenedor-home'>

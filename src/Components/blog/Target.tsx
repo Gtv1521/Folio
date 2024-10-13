@@ -5,6 +5,7 @@ import { IProject } from "../../types/Interfaces"
 function Target(IProject: IProject) {
     return (
         <div className="box-targeta">
+
             <Link to={`/blog/${IProject.id}`}>
                 {
                     <div className="contenedor-target">
