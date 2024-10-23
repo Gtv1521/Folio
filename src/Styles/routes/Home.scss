@@ -152,7 +152,28 @@
     }
 }
 
-@media (561px <=width <=1366px) {
+@media (561px <=width <=960px) {
+    .contenedor-home {
+        & .container {
+            & .box {
+                width: 78%;
+                height: auto;
+                & .name {
+                    width: 90%;
+                }
+                & .description {
+                    width: 90%;
+                }
+                & .enlaces {
+                    width: 90%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (961px <=width <=1366px) {
     .contenedor-home {
         width: 100%;
         min-height: 100vh;
@@ -172,14 +193,11 @@
 
                 & .name {
                     padding: 0;
-                    width: 65%;
-                    font-size: 35px;
+                    width: 85%;
                 }
 
                 & .description {
                     width: 80%;
-                    min-height: 65vh;
-                    height: auto;
                     font-size: 14px;
                     font-weight: 600;
                 }
