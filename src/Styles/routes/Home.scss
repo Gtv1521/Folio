@@ -18,19 +18,14 @@
     & .container {
         margin: 0 auto;
         width: 90%;
-        height: 100vh;
         display: flex;
 
         & .box {
             background-color: var.$Primero;
             width: 70%;
-            height: 75vh;
-            // max-height: 70%;
+            height: auto;
             margin: auto;
-
-
-            // flex-direction: column;
-            width: 90%;
+            // width: 90%;
             border: 2px solid var.$Blanco;
             border-radius: 30px;
             padding: 40px;
@@ -103,7 +98,6 @@
 .title-contact {
     font-size: 25px;
     margin-bottom: 20px;
-    // color: var.$LetrasAzules;
 }
 
 .contact {
@@ -126,7 +120,6 @@
 
             & .box {
                 width: 100%;
-                height: 80vh;
                 padding: 0;
 
                 & .name {
@@ -173,8 +166,8 @@
 
             & .box {
                 width: 90%;
-                height: 78vh;
-                padding: 10px;
+                padding: 3px;
+                font-size: 25px !important;
 
 
                 & .name {
@@ -185,7 +178,7 @@
 
                 & .description {
                     width: 80%;
-                    min-height: 310px;
+                    min-height: 65vh;
                     height: auto;
                     font-size: 14px;
                     font-weight: 600;
@@ -211,7 +204,7 @@
         & .container {
             & .box {
                 width: 78%;
-                height: 65vh;
+                height: auto;
             }
         }
     }
