@@ -1,19 +1,18 @@
 @use '../variables' as var;
 
-.contenedor {
+.contenedor-file {
     width: 100%;
     height: 100vh;
     margin: 0%;
-    background-color: var.$BlancoDifuminado;
 
     .titulos {
-        color: var.$Blanco;
+        color: var.$LetrasNegras;
+        background-color: var.$Celeste;
         text-align: center;
         padding: 2px;
         font-weight: 900;
         margin: 0;
         display: flex;
-        // justify-content: space-evenly;
 
         & .back {
             width: 5%;
@@ -29,7 +28,6 @@
                 justify-content: center;
                 cursor: pointer;
                 z-index: 1;
-                // background-color: red;
 
                 & .icono {
                     font-size: 30px;
@@ -41,12 +39,10 @@
         & .titulo {
             width: 95%;
             height: 100%;
-            // margin-left: -2.5%;
             display: flex;
             justify-content: center;
             align-items: center;
             & h1 {
-                // background-color: red;
                 margin-left: -5%;
             }
         }
@@ -64,17 +60,13 @@
             width: 100%;
             text-align: center;
             font-size: 25px;
-            color: var.$LetrasBlancas;
+            color: var.$LetrasNegras;
         }
     }
 
     & .contenedor-row {
         margin: auto;
-        // padding: 20px;
         width: 97%;
-
-        // scroll-padding: 0;
-        // margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

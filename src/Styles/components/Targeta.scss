@@ -1,59 +1,56 @@
 @use '../variables' as var;
 
 .box-targeta {
-    margin: 20px auto;
-    width: 30%;
-    background-color: var.$AzulOscuro;
-    border: 1px solid var.$Blanco;
-    border-radius: 10px;
-    // box-shadow: 3px 3px 10px var.$Primero;
+  margin: 20px auto;
+  width: 30%;
+  background-color: var.$AzulOscuro;
+  border: 1px solid var.$Blanco;
+  border-radius: 10px;
 
-    & .contenedor-target {
-        width: 100%;
-        color: var.$Primero;
+  & .contenedor-target {
+    width: 100%;
+    color: var.$Primero;
 
-
-        & img {
-            width: 100%;
-            height: 30vh;
-            border-radius: 10px 10px 0 0;
-        }
-
-        & .contain {
-            width: 90%;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: none;
-            align-items: none;
-            margin: auto;
-            padding: 0 10px 10px 10px;
-            & p {
-                margin: 2px;
-            }
-            & .titulo {
-                font-weight: 900;
-                font-size: 16px;
-            }
-            & .description {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-        }
-
+    & img {
+      width: 100%;
+      height: 30vh;
+      border-radius: 10px 10px 0 0;
     }
+
+    & .contain {
+      width: 90%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: none;
+      margin: auto;
+      padding: 0 10px 10px 10px;
+      & p {
+        margin: 2px;
+      }
+      & .titulo {
+        font-weight: 900;
+        font-size: 16px;
+      }
+      & .description {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 30px) and (max-width: 564px) {
-    .box-targeta {
-        width: 48%;
+  .box-targeta {
+    width: 48%;
 
-        & .contenedor-target {
-            & img {
-                width: 100%;
-                height: 20vh;
-            }
-        }
+    & .contenedor-target {
+      & img {
+        width: 100%;
+        height: 20vh;
+      }
     }
+  }
 }

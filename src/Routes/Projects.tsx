@@ -13,7 +13,7 @@ function allTarget(projects: any) {
 
 function Projects() {
     return (
-        <div className='contenedor'>
+        <div className='contenedor-file'>
             <div className="titulos">
                 <div className="back">
                     <Link className='icon' to="/">

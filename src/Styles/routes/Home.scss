@@ -1,229 +1,388 @@
 @use '../variables' as var;
 
 .contenedor-home {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  & .menu-grande {
+    animation-name: big;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  & .menu-pequeno {
+    animation-name: small;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  & .contenedor {
     height: 100vh;
-    margin-top: 0;
-    padding: 0;
-    font-size: 16px;
+    background-color: var.$Tablero;
+
+    // Muestra logo
+    & .logo {
+      width: 100%;
+      height: 15%;
+      color: var.$Cream;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var.$Primero;
+
+      & .image {
+        padding: 0 50px;
+        font-size: 40px;
+      }
+    }
+
+    & .toggle {
+      height: 5%;
+
+      & .left {
+        animation-name: moverIzquierda;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        // animation-direction: normal;
+        animation-fill-mode: forwards;
+      }
+
+      & .rigth {
+        animation-name: moverDerecha;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      & .arrow {
+        padding: 10px 14px;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 50%;
+        border: 3px solid var.$Celeste;
+        background-color: var.$Cream;
+        color: var.$LetrasNegras;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var.$Primero;
+          color: var.$Celeste;
+        }
+      }
+    }
+    // Muestra enlaces
+    & .enlaces {
+      width: 100%;
+      height: 65%;
+      display: block;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      & .enlace-vista {
+        color: var.$LetrasBlancas;
+        text-decoration: none;
+        background-color: var.$AzulOscuro;
+        display: flex;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 20px 10px;
+
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+          background: var.$Blanco;
+          color: var.$LetrasNegras;
+        }
+
+        .icono {
+          margin-left: 10%;
+          align-items: start;
+          width: 60px;
+          color: var.$Cream;
+        }
+      }
+    }
+
+    .text {
+      width: 50%;
+      text-align: center;
+    }
+    .none {
+      display: none;
+    }
+
+    // Muestra perfil
+    & .perfil {
+      width: 100%;
+      height: 15%;
+      color: var.$Primero;
+      display: block;
+      background-color: var.$Celeste;
+    }
+  }
+
+  & .container-big {
+    animation-name: grande;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  & .container-small {
+    animation-name: pequeno;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  & .container {
+    height: 100%;
+    background-color: var.$Blanco;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    overflow: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
 
+    & .muestra-projects {
+      width: 100%;
+    }
 
-    & .container {
-        margin: 0 auto;
-        width: 90%;
+    & .title {
+      width: 80%;
+      margin: auto;
+      font-size: 24px;
+      text-align: center;
+      color: var.$LetrasNegras !important;
+      transition: transform 0.3s ease;
+      border-bottom: 2px solid var.$LetrasNegras;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    & .box {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60vh;
+      color: var.$LetrasNegras;
+
+      & .description {
+        margin: -20px auto 0 auto;
+        width: 60%;
+        height: 45vh;
         display: flex;
-
-        & .box {
-            background-color: var.$Primero;
-            width: 70%;
-            height: auto;
-            margin: auto;
-            // width: 90%;
-            border: 2px solid var.$Blanco;
-            border-radius: 30px;
-            padding: 40px;
-            text-align: center;
-            opacity: .8;
-            box-shadow: 10px 10px 5px rgb(117, 66, 66);
-
-
-            & .name {
-                font-size: 42px;
-                color: var.$Segundo;
-                width: 70%;
-                margin: 50px auto 0 auto;
-                border-bottom: 3px solid var.$Segundo;
-                transition: transform 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.4);
-                    border-bottom: 1px solid var.$Segundo;
-
-                }
-            }
-
-            & .description {
-                margin: 10px auto;
-                width: 60%;
-                height: 45vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                & h3 {
-                    color: var.$LetrasNegras;
-                    font-size: 24px;
-                    margin-bottom: 15px;
-                }
-            }
-
-            & .enlaces {
-                width: 70%;
-                margin: 30px auto;
-                display: flex;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-
-
-                & button {
-                    color: var.$LetrasAzules;
-                    text-decoration: none;
-                    transition: transfor 0.3s ease;
-                    border: none;
-                    margin: 10px;
-
-                    border-radius: 15px;
-                    font-size: 18px;
-                    padding: 10px 15px;
-                    font-weight: 600;
-                    box-shadow: 10px 10px 5px rgb(110, 54, 54);
-
-                    &:hover {
-                        background-color: var.$AzulOscuro;
-                        color: var.$Blanco;
-                    }
-                }
-            }
-        }
+        justify-content: center;
+        align-items: center;
+      }
     }
+  }
 }
 
-.title-contact {
-    font-size: 25px;
-    margin-bottom: 20px;
+// ######################################################################################################
+// ANIMACIONES
+// Menu modificar
+@keyframes small {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 5%;
+  }
 }
 
-.contact {
-    text-align: start;
+@keyframes big {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 20%;
+  }
 }
 
-@media (30px <=width <=560px) {
-
-    .contenedor-home {
-        width: 100%;
-        min-height: 100vh;
-        align-items: start !important;
-        position: relative;
-        padding: 0;
-
-        & .container {
-            width: 90%;
-            margin: auto;
-            padding: 0;
-
-            & .box {
-                width: 100%;
-                padding: 0;
-
-                & .name {
-                    padding: 0;
-                    width: 90%;
-                    font-size: 30px;
-                }
-
-                & .description {
-                    width: 97%;
-                    min-height: 360px;
-                    height: auto;
-                    font-size: 14px;
-                    font-weight: 600;
-                }
-
-                & .enlaces {
-                    width: 100%;
-                    margin: 5px auto 50px auto;
-                    padding-bottom: 10px;
-                    flex-wrap: wrap;
-
-                    & button {
-                        margin: 10px;
-                    }
-                }
-
-            }
-        }
-    }
+// Container Modified
+@keyframes grande {
+  100% {
+    width: 95%;
+  }
+  0% {
+    width: 80%;
+  }
+}
+@keyframes pequeno {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
-@media (561px <=width <=960px) {
-    .contenedor-home {
-        & .container {
-            & .box {
-                width: 78%;
-                height: auto;
-                & .name {
-                    width: 90%;
-                }
-                & .description {
-                    width: 90%;
-                }
-                & .enlaces {
-                    width: 90%;
-                }
-
-            }
-        }
-    }
+@keyframes moverDerecha {
+  100% {
+    position: absolute;
+    left: 18.5%;
+  }
+  0% {
+    position: absolute;
+    left: 3.8%;
+  }
+}
+@keyframes moverIzquierda {
+  0% {
+    position: absolute;
+    left: 18.5%;
+  }
+  100% {
+    position: absolute;
+    left: 3.8%;
+  }
 }
 
-@media (961px <=width <=1366px) {
-    .contenedor-home {
-        width: 100%;
-        min-height: 100vh;
-        align-items: start !important;
-        position: relative;
+// @keyframes desaparecer {
+//     from {
+//         display: flex;
+//     }
+//     to {
+//         display: none;
+//     }
+// }
 
-        & .container {
-            width: 85%;
-            height: 100vh;
-            padding: 2px 2px 80px 2px;
+// .title-contact {
+//   font-size: 25px;
+//   margin-bottom: 20px;
+// }
 
-            & .box {
-                width: 90%;
-                padding: 3px;
-                font-size: 25px !important;
+// .contact {
+//   text-align: start;
+// }
 
+// @media (30px <=width <=560px) {
+//   .contenedor-home {
+//     width: 100%;
+//     min-height: 100vh;
+//     align-items: start !important;
+//     position: relative;
+//     padding: 0;
 
-                & .name {
-                    padding: 0;
-                    width: 85%;
-                }
+//     & .container {
+//       width: 90%;
+//       margin: auto;
+//       padding: 0;
 
-                & .description {
-                    width: 80%;
-                    font-size: 14px;
-                    font-weight: 600;
-                }
+//       & .box {
+//         width: 100%;
+//         padding: 0;
 
-                & .enlaces {
-                    width: 90%;
-                    margin: 5px auto 50px auto;
-                    padding-bottom: 10px;
-                    flex-wrap: wrap;
+//         & .name {
+//           padding: 0;
+//           width: 90%;
+//           font-size: 30px;
+//         }
 
-                    & button {
-                        margin: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
+//         & .description {
+//           width: 97%;
+//           min-height: 360px;
+//           height: auto;
+//           font-size: 14px;
+//           font-weight: 600;
+//         }
+
+//         & .enlaces {
+//           width: 100%;
+//           margin: 5px auto 50px auto;
+//           padding-bottom: 10px;
+//           flex-wrap: wrap;
+
+//           & button {
+//             margin: 10px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (561px <=width <=960px) {
+//   .contenedor-home {
+//     & .container {
+//       & .box {
+//         width: 78%;
+//         height: auto;
+//         & .name {
+//           width: 90%;
+//         }
+//         & .description {
+//           width: 90%;
+//         }
+//         & .enlaces {
+//           width: 90%;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (961px <=width <=1366px) {
+//   .contenedor-home {
+//     width: 100%;
+//     min-height: 100vh;.title-contact {
+//   font-size: 25px;
+//   margin-bottom: 20px;
+// }
+
+// .contact {
+//   text-align: start;
+// }
+//       height: 100vh;
+//       padding: 2px 2px 80px 2px;
+
+//       & .box {
+//         width: 90%;
+//         padding: 3px;
+//         font-size: 25px !important;
+
+//         & .name {
+//           padding: 0;
+//           width: 85%;
+//         }
+
+//         & .description {
+//           width: 80%;
+//           font-size: 14px;
+//           font-weight: 600;
+//         }
+
+//         & .enlaces {
+//           width: 90%;
+//           margin: 5px auto 50px auto;
+//           padding-bottom: 10px;
+//           flex-wrap: wrap;
+
+//           & button {
+//             margin: 10px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media (1367px <=width <=2000px) {
-    .contenedor-home {
-        & .container {
-            & .box {
-                width: 78%;
-                height: auto;
-            }
-        }
-    }
+  .box {
+    font-size: 20px;
+  }
 }
