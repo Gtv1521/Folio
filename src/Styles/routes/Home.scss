@@ -41,8 +41,8 @@
       color: var.$Primero;
 
       & .image {
-        padding: 0 50px;
-        font-size: 40px;
+        padding: 0 5%;
+        font-size: 2.5rem;
       }
     }
 
@@ -53,7 +53,6 @@
         animation-name: moverIzquierda;
         animation-duration: 1s;
         animation-iteration-count: 1;
-        // animation-direction: normal;
         animation-fill-mode: forwards;
       }
 
@@ -79,57 +78,51 @@
         }
       }
     }
-    // Muestra enlaces
-    & .enlaces {
-      width: 100%;
-      height: 65%;
-      display: block;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
 
-      & .enlace-vista {
-        color: var.$LetrasBlancas;
-        text-decoration: none;
-        background-color: var.$AzulOscuro;
-        display: flex;
-        width: 100%;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        padding: 20px 10px;
 
-        font-weight: 700;
-        text-decoration: none;
-
-        &:hover {
-          background: var.$Blanco;
-          color: var.$LetrasNegras;
-        }
-
-        .icono {
-          margin-left: 10%;
-          align-items: start;
-          width: 60px;
-          color: var.$Cream;
-        }
-      }
-    }
-
-    .text {
-      width: 50%;
-      text-align: center;
-    }
-    .none {
-      display: none;
-    }
 
     // Muestra perfil
     & .perfil {
       width: 100%;
-      height: 15%;
+      height: 25%;
+      font-size: 1rem;
+      display: flex;
       color: var.$Primero;
-      display: block;
       background-color: var.$Celeste;
+      border-top: 1px solid var.$Primero;
+
+      & .contenido-perfil {
+        display: block;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+
+        & .img-perfil {
+          width: 100%;
+          height: 60%;
+          text-align: center;
+
+          & .img-big {
+            width: 35%;
+            border: 2px solid var.$Primero;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            border-radius: 50%;
+          }
+          & .img-small {
+            width: 85%;
+            border: 2px solid var.$Primero;
+            height: 60%;
+            object-fit: cover;
+            z-index: 1;
+            border-radius: 50%;
+          }
+        }
+      }
+      & h2 {
+        text-align: center;
+      }
     }
   }
 
@@ -146,7 +139,8 @@
   }
 
   & .container {
-    height: 100%;
+    width: auto;
+    height: 100vh;
     background-color: var.$Blanco;
     display: flex;
     justify-content: center;
@@ -155,40 +149,29 @@
 
     & .muestra-projects {
       width: 100%;
-    }
-
-    & .title {
-      width: 80%;
-      margin: auto;
-      font-size: 24px;
-      text-align: center;
-      color: var.$LetrasNegras !important;
-      transition: transform 0.3s ease;
-      border-bottom: 2px solid var.$LetrasNegras;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    & .box {
-      display: block;
+      height: 100vh;
+      display: flex;
       text-align: center;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 60vh;
-      color: var.$LetrasNegras;
-
-      & .description {
-        margin: -20px auto 0 auto;
-        width: 60%;
-        height: 45vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
     }
+  }
+}
+
+// ######################################################################################################
+// vista superior a 961px
+@media (961px <=width <=1366px) {
+  .perfil {
+    font-size: 12px;
+  }
+}
+
+
+// ######################################################################################################
+// vista superior a 1367px
+@media (1367px <=width <=2000px) {
+  .box {
+    font-size: 20px;
   }
 }
 
@@ -251,24 +234,6 @@
     left: 3.8%;
   }
 }
-
-// @keyframes desaparecer {
-//     from {
-//         display: flex;
-//     }
-//     to {
-//         display: none;
-//     }
-// }
-
-// .title-contact {
-//   font-size: 25px;
-//   margin-bottom: 20px;
-// }
-
-// .contact {
-//   text-align: start;
-// }
 
 // @media (30px <=width <=560px) {
 //   .contenedor-home {
@@ -336,53 +301,4 @@
 //   }
 // }
 
-// @media (961px <=width <=1366px) {
-//   .contenedor-home {
-//     width: 100%;
-//     min-height: 100vh;.title-contact {
-//   font-size: 25px;
-//   margin-bottom: 20px;
-// }
 
-// .contact {
-//   text-align: start;
-// }
-//       height: 100vh;
-//       padding: 2px 2px 80px 2px;
-
-//       & .box {
-//         width: 90%;
-//         padding: 3px;
-//         font-size: 25px !important;
-
-//         & .name {
-//           padding: 0;
-//           width: 85%;
-//         }
-
-//         & .description {
-//           width: 80%;
-//           font-size: 14px;
-//           font-weight: 600;
-//         }
-
-//         & .enlaces {
-//           width: 90%;
-//           margin: 5px auto 50px auto;
-//           padding-bottom: 10px;
-//           flex-wrap: wrap;
-
-//           & button {
-//             margin: 10px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-@media (1367px <=width <=2000px) {
-  .box {
-    font-size: 20px;
-  }
-}

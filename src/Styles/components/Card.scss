@@ -1,15 +1,15 @@
 @use '../variables' as var;
 
-.container {
+.container-project {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
 
-    & .container-row {
-        width: 80%;
+    & .container-project-row {
+        width: 90%;
         height: 100%;
         margin: 0 auto;
-        background-color: var.$Blanco;
+        background-color: var.$NegroDifuminado;
         overflow: hidden;
         overflow-y: scroll;
         scrollbar-width: none;
@@ -20,7 +20,7 @@
             margin: auto;
             display: flex;
             align-items: center;
-
+            
             & .volvera {
                 width: 5%;
                 height: 100%;
@@ -29,9 +29,9 @@
                 justify-content: center;
                 cursor: pointer;
 
-                & .icono {
+                & .icono-volver {
                     font-size: 30px;
-                    color: var.$AzulOscuro;
+                    color: var.$Blanco;
                 }
             }
 
@@ -43,6 +43,7 @@
                     width: 20%;
                     margin: auto;
                     text-align: center;
+                    color: var.$Primero;
                 }
             }
         }

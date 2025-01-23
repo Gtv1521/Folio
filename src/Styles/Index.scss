@@ -4,9 +4,10 @@
 @use './components/Card';
 @use './routes/Home';
 @use './routes/Projects';
-@use './components/About';
 @use './components/Welcome';
 @use './components/Targeta';
+@use './components/nav/enlaces';
+@use './components/utils/titleName';
 
 
 .App {

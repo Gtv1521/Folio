@@ -3,21 +3,17 @@ import { IProject } from '../../types/Interfaces'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
-// import Foto from '../../img/Foto.png'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function Card(IProject: IProject) {
   return (
-    <div className='container'>
-
+    <div className="container-project">
       {
-        // este modulo va a mostrar todos los datos puntuales de cada proyecto 
-        <div className="container-row">
+        // este modulo va a mostrar todos los datos puntuales de cada proyecto
+        <div className="container-project-row">
           <div className="cabezera">
             <div className="volvera">
-              <Link className='icon' to="/projects">
-                <FontAwesomeIcon className='icono' icon={faCircleChevronLeft} />
+              <Link className="icono-volver" to="/projects">
+                <FontAwesomeIcon className="icono" icon={faCircleChevronLeft} />
               </Link>
             </div>
             <div className="titulo">
@@ -31,18 +27,10 @@ function Card(IProject: IProject) {
             </div>
             <div className="descriptions">
               <h3>Descripcion</h3>
-              <section>
-                {IProject.description}
-              </section>
-              <section>
-                {IProject.descriptionUno}
-              </section>
-              <section>
-                {IProject.descriptionDos}
-              </section>
-              <section>
-                {IProject.descriptionTres}
-              </section>
+              <section>{IProject.description}</section>
+              <section>{IProject.descriptionUno}</section>
+              <section>{IProject.descriptionDos}</section>
+              <section>{IProject.descriptionTres}</section>
             </div>
 
             <div className="routes">

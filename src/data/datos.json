@@ -15,10 +15,10 @@
             "title": "Notas",
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
-            "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
-            "description1": "",
-            "description2": "",
-            "description3": ""
+            "description": "Esta es una aplicion de tipo Api RESTful creada en C# .net Core, con enlace a una base de datos MongoDB. Esta aplicacion da manejo a usuarios por medio de un access token de acceso,   ",
+            "descriptionUno": "Este proyecto fue creado en base a la cosas que se de angular y con el objetivo unicamente de aprender como se realiza, esta es una muestra de mis objetivos y de como suelo aplicar los conocimientos nuevos que adquiero",
+            "descriptionDos": "Este proyecto fue creado en base a la cosas que se de angular y con el objetivo unicamente de aprender como se realiza, esta es una muestra de mis objetivos y de como suelo aplicar los conocimientos nuevos que adquiero",
+            "descriptionTres": ""
         },
         {
             "id": 3,
@@ -26,9 +26,9 @@
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
             "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
-            "description1": "",
-            "description2": "",
-            "description3": ""
+            "descriptionUno": "",
+            "descriptionDos": "",
+            "descriptionTres": ""
         },
         {
             "id": 4,
@@ -36,9 +36,9 @@
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
             "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
-            "description1": "",
-            "description2": "",
-            "description3": ""
+            "descriptionUno": "",
+            "descriptionDos": "",
+            "descriptionTres": ""
         },
         {
             "id": 5,
@@ -46,9 +46,9 @@
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
             "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
-            "description1": "",
-            "description2": "",
-            "description3": ""
+            "descriptionUno": "",
+            "descriptionDos": "",
+            "descriptionTres": ""
         }    
 
     ],
@@ -59,9 +59,9 @@
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
             "description": "Esta es una api RESTful creada en C# .net Core, se usa para gestion de usuarios donde los usuario pueden hacer ",
-            "description1": "",
-            "description2": "",
-            "description3": ""
+            "descriptionUno": "",
+            "descriptionDos": "",
+            "descriptionTres": ""
         }
     ],
     "Monoliticas": [
@@ -71,9 +71,9 @@
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
             "description": "Esta es una aplicacion creada con Blazor .Net Core, se usa para gestion de targetas de plantas donde lo que se busca es centralizacion de los datos, y pues que se pueda consultar las enfermedades mas comunes los tratamientos que se les da los cultivos y menejo de plagas y enfermedades",
-            "description1": "",
-            "description2": "",
-            "description3": ""
+            "descriptionUno": "",
+            "descriptionDos": "",
+            "descriptionTres": ""
         },
         {
             "id": 8,
@@ -81,9 +81,9 @@
             "image": "https://res.cloudinary.com/djtxchura/image/upload/v1728523878/Portafolio/oj5ubsdklfxr5do0rwto.png",
             "url": "https://www.facebook.com/",
             "description": "Es una aplicacion web hecha totalmente en NodeJs con express y la base de datos que usa esta en un servidor de mysql ",
-            "description1": "La aplicacion fue pensada para el manejo de un restaurante, que pudieran hacer manejo de las mesas y manejo de los datos que venden donde las facturas los",
-            "description2": "",
-            "description3": ""
+            "descriptionUno": "",
+            "descriptionDos": "",
+            "descriptionTres": ""
         }
     ]
 }

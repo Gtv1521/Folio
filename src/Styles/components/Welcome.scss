@@ -1,5 +1,11 @@
 @use '../variables' as var;
 
+.container-info{
+    width: 60%;
+}
+
 .box-start {
     width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
