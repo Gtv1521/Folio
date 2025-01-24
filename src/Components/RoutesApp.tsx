@@ -16,7 +16,7 @@ function RoutesApp() {
         {/* Arranque de app */}
         <Route path="/" element={<Home />}>
           {/* Rutas personales */}
-          <Route index path="home" element={<Welcome />} />
+          <Route index element={<Welcome />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
