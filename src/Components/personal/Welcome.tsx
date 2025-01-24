@@ -8,7 +8,7 @@ function Welcome() {
         </div>
         <div className="box-start">
           <h2>
-            <strong>Developer .Net(C#) | JavaScript</strong>
+            <strong>Developer .Net(C#) | JavaScript - Typescript</strong>
           </h2>
           <h3>
             <strong>Bienvenido</strong>
