@@ -22,7 +22,7 @@ function RoutesApp() {
           <Route path="projects" element={<Projects />} />
 
           {/* Muestras de proyect */}
-          <Route path="/blog/:id" element={<Blog />} />
+          <Route path="blog/:id" element={<Blog />} />
         </Route>
       </Routes>
     </Router>
