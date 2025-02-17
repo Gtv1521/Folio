@@ -8,13 +8,13 @@ function Welcome() {
         </div>
         <div className="box-start">
           <h2>
-            <strong>Developer .Net(C#) | JavaScript</strong>
+            <strong>Developer .Net(C#) | JavaScript - Typescript</strong>
           </h2>
           <h3>
             <strong>Bienvenido</strong>
           </h3>
           <p>
-            Este portafolio muestra algunas de las cosas que realizado en base a
+            Este portafolio muestra algunos de los proyectos que realizado en base a
             lo que se, espero te guste.
           </p>
         </div>

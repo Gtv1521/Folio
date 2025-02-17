@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from '../Routes/Home'
 // import About from "../Routes/About"
 import Blog from '../Routes/Blog'
@@ -13,16 +13,21 @@ function RoutesApp() {
     <Router>
       {/* <Nav /> */}
       <Routes>
-        {/* Arranque de app */}
         <Route path="/" element={<Home />}>
-          {/* Rutas personales */}
-          <Route index path="home" element={<Welcome />} />
+          {/* Redirección por defecto a /home */}
+          <Route index element={<Navigate to="/home" replace />} />
+          
+          {/* Rutas principales */}
+          <Route path="home" element={<Welcome />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects" element={<Projects />} />
-
-          {/* Muestras de proyect */}
-          <Route path="/blog/:id" element={<Blog />} />
+          
+          {/* Rutas dinámicas */}
+          <Route path="blog/:id" element={<Blog />} />
+          
+          {/* Manejo de rutas no encontradas */}
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
       </Routes>
     </Router>
