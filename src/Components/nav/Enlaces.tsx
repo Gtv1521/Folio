@@ -24,7 +24,7 @@ function Enlaces({ toggle }: PropsEntrada): JSX.Element {
 
   return (
     <div className="enlaces">
-      <NavLink to={'/home'} className="enlace-vista">
+      <NavLink to={'/'} className="enlace-vista">
         <div className="contenido-btn">
           <span className="icono">
             <FontAwesomeIcon icon={faHouse} />
