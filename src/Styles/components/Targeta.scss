@@ -6,6 +6,11 @@
   background-color: var.$AzulOscuro;
   border: 2px solid var.$Celeste;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2); 
+  }
 
   & .contenedor-target {
     width: 100%;
