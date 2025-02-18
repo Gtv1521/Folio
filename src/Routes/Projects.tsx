@@ -13,7 +13,8 @@ function allTarget(projects: any) {
       descriptionUno={app.descriptionUno}
       descriptionDos={app.descriptionDos}
       descriptionTres={app.descriptionTres}
-    ></Target>
+      tecnologias={app.tecnologias}
+    />
   ))
 }
 
@@ -29,19 +30,13 @@ function Projects() {
         <h3>Backend</h3>
         <div className="contenedor-row">
           {
-            allTarget(datos.backend) // Aqui se va a crear cada una de las targetas para cada proyecto
+            allTarget(datos.backend) 
           }
         </div>
         <h3>Frontend</h3>
         <div className="contenedor-row">
           {
-            allTarget(datos.frontend) // Aqui se va a crear cada una de las targetas para cada proyecto
-          }
-        </div>
-        <h3>Monoliticos</h3>
-        <div className="contenedor-row">
-          {
-            allTarget(datos.Monoliticas) // Aqui se va a crear cada una de las targetas para cada proyecto
+            allTarget(datos.frontend) 
           }
         </div>
       </div>
