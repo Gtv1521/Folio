@@ -12,7 +12,7 @@ import { Navigate, Outlet } from 'react-router-dom'
 import Enlaces from '../Components/nav/Enlaces'
 
 function Home() {
-  const [toggle, setToggle] = useState(true)
+  const [toggle, setToggle] = useState(false)
 
   return (
     <div className="contenedor-home">

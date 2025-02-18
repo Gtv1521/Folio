@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
-function Card(IProject: IProject) {
+function Card(Datos: IProject) {
+  console.log(Datos)
   return (
     <div className="container-project">
       {
@@ -17,27 +18,37 @@ function Card(IProject: IProject) {
               </Link>
             </div>
             <div className="titulo">
-              <h1>{IProject.title}</h1>
+              <h1>{Datos.title}</h1>
             </div>
           </div>
 
           <div className="dashboard">
             <div className="image">
-              <img src={IProject.image} alt="" />
+              <a href={Datos.url}>
+                <img src={Datos.image} alt="" />
+              </a>
             </div>
             <div className="descriptions">
               <h3>Descripcion</h3>
-              <section>{IProject.description}</section>
-              <section>{IProject.descriptionUno}</section>
-              <section>{IProject.descriptionDos}</section>
-              <section>{IProject.descriptionTres}</section>
+              <section>{Datos.description}</section>
+              <section>{Datos.descriptionUno}</section>
+              <section>{Datos.descriptionDos}</section>
+              <section>{Datos.descriptionTres}</section>
+            </div>
+            <div className="descriptions">
+              <h3>Tecnologias usadas:</h3>
+              <ul>
+                {Datos.tecnologias?.map((tech, index) => (
+                  <li key={index}><strong> {tech} </strong></li>
+                ))}
+              </ul>
             </div>
 
             <div className="routes">
               <h3>Enlace</h3>
               <section>
                 <strong>Puedes ir a visitar la app en este enlace: </strong>
-                <a href={IProject.url}>{IProject.url}</a>
+                <a href={Datos.url}>{Datos.url}</a>
               </section>
             </div>
             <div className="space"></div>

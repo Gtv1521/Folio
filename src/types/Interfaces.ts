@@ -1,3 +1,5 @@
+import { LinkProps } from "react-router-dom";
+
 // Definir una interfaz para los proyectos
 export interface IProject {
     id: number;
@@ -8,4 +10,5 @@ export interface IProject {
     descriptionUno?: string;
     descriptionDos?: string;
     descriptionTres?: string;
+    tecnologias?: string[]
   }
