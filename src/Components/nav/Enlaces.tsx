@@ -17,7 +17,7 @@ function Enlaces({ toggle }: PropsEntrada): JSX.Element {
   const handleDownload = () => {
     const link = document.createElement('a')
     link.href =
-      'https://github.com/Gtv1521/Folio/blob/master/src/assets/images/GustavoBernal-Cv.pdf'
+      'https://github.com/Gtv1521/Folio/raw/master/src/assets/images/GustavoBernal-Cv.pdf'
     link.setAttribute('download', 'Curriculum-GustavoBernal.pdf')
     link.click()
   }
