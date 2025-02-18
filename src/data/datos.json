@@ -49,7 +49,7 @@
       "id": 11,
       "title": "My Bloog",
       "image": "https://res.cloudinary.com/djtxchura/image/upload/v1739836724/Portafolio/Screenshot_20250217_185827_y3dybe.png",
-      "url": "https://front-plantas.vercel.app/",
+      "url": "https://blog-notas-front.vercel.app/home/login",
       "description": "My Bloog es una aplicacion creada con el fonted Angular, la cual esta creada con el fin de que se puedan crear notas y pues a la vez hacer colecciones de notas o libretas, esta diseñada con el maquetado de Sass y Css para el diseño de las vistas",
       "descriptionUno": "Ademas esta sobre un contenedor de Docker para que haya mas integracion con diferentes sistemas, el despliegue se realizo en Vercel y puedes ingresar a la aplicación en la ruta o en la imagen de la ruta tambien se puede",
       "descriptionDos": "",
