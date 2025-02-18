@@ -22,7 +22,6 @@ function RoutesApp() {
         <Route path="/" element={<Home />}>
           {/* Redirección por defecto a /home */}
           <Route index element={<Navigate to="/home" replace />} />
-          
           {/* Rutas principales */}
           <Route path="home" element={<Welcome />} />
           <Route path="about" element={<About />} />
@@ -31,9 +30,9 @@ function RoutesApp() {
           
           {/* Rutas dinámicas */}
           <Route path="blog/:id" element={<Blog />} />
-          
+
           {/* Manejo de rutas no encontradas */}
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

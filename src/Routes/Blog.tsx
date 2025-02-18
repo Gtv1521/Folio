@@ -11,9 +11,9 @@ function Blog() {
 
   // hace paso del id para una de las categorias
   useEffect(() => {
-    if (productId <= 5) {
+    if (productId <= 10) {
       setCategoria(1)
-    } else if (productId >= 6) {
+    } else if (productId >= 11) {
       setCategoria(2)
     }
   }, [productId])
