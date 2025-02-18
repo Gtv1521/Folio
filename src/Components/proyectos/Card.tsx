@@ -35,8 +35,8 @@ function Card(Datos: IProject) {
               <section>{Datos.descriptionDos}</section>
               <section>{Datos.descriptionTres}</section>
             </div>
-            <div className="descriptions">
-              <h3>Tecnologias usadas:</h3>
+            <div className="tecnologias">
+              <h3 className='subtitle'>Tecnologias usadas:</h3>
               <ul>
                 {Datos.tecnologias?.map((tech, index) => (
                   <li key={index}><strong> {tech} </strong></li>
