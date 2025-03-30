@@ -24,7 +24,7 @@
 
   & .all-projects {
     display: flex;
-    max-height: 89vh;
+    max-height: 90vh;
     flex-direction: column;
     overflow: hidden;
     overflow-y: scroll;
@@ -48,7 +48,7 @@
   }
 }
 
-@media (200px <=width <=1366px) {
+@media (300px <= width <= 660px) {
   .all-projects {
     height: 85.4vh;
   }

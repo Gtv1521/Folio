@@ -1,11 +1,11 @@
-import React from 'react'
-import { IProject } from '../../types/Interfaces'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import React from "react";
+import { IProject } from "../../types/Interfaces";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Card(Datos: IProject) {
-  console.log(Datos)
+  console.log(Datos);
   return (
     <div className="container-project">
       {
@@ -36,19 +36,27 @@ function Card(Datos: IProject) {
               <section>{Datos.descriptionTres}</section>
             </div>
             <div className="tecnologias">
-              <h3 className='subtitle'>Tecnologias usadas:</h3>
+              <h3 className="subtitle">Tecnologias usadas:</h3>
               <ul>
                 {Datos.tecnologias?.map((tech, index) => (
-                  <li key={index}><strong> {tech} </strong></li>
+                  <li key={index}>
+                    <strong> {tech} </strong>
+                  </li>
                 ))}
               </ul>
             </div>
 
             <div className="routes">
-              <h3>Enlace</h3>
+              <h3>Enlaces</h3>
               <section>
-                <strong>Puedes ir a visitar la app en este enlace: </strong>
+                <strong>App desplegada: </strong>
+                <br />
                 <a href={Datos.url}>{Datos.url}</a>
+              </section>
+              <section>
+                <strong>Codigo Github: </strong>
+                <br />
+                <a href={Datos.git}>{Datos.git}</a>
               </section>
             </div>
             <div className="space"></div>
@@ -56,7 +64,7 @@ function Card(Datos: IProject) {
         </div>
       }
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

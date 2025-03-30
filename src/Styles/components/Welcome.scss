@@ -1,11 +1,66 @@
-@use '../variables' as var;
+@use "../variables" as var;
 
-.container-info{
-    width: 60%;
+.container-info {
+  width: 60%;
 }
 
 .box-start {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: var.$Primero;
+  padding: 20px;
+
+  & .title-contact {
+    font-style: italic !important;
+    font-size: 25px !important;
+  }
+
+  .contact {
+    list-style: none;
+    text-align: justify;
+  }
+}
+
+// para telefonos
+@media (300px <= width <= 660px) {
+  .container-info {
     width: 100%;
-    font-size: 1.1rem;
-    font-weight: 500;
+    margin: auto;
+
+    .box-start {
+      width: 91% !important;
+      margin: auto;
+      padding: 10px !important;
+
+      .title-contact {
+        font-size: 19px !important;
+        text-align: center;
+        margin: auto !important;
+      }
+
+      h2 {
+        width: 100%;
+        font-size: 19px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 900;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .contact {
+        padding: 0 !important;
+        text-align: start;
+      }
+    }
+  }
 }
