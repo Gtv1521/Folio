@@ -14,7 +14,7 @@ function Welcome() {
             <strong>Bienvenido</strong>
           </h3>
           <p>
-            Este portafolio muestra algunos de los proyectos que realizado en base a
+            Este portafolio muestra algunos de los proyectos que he realizado en base a
             lo que se, espero te guste.
           </p>
         </div>
