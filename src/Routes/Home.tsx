@@ -35,7 +35,7 @@ function Home() {
             onClick={() => setToggle(!toggle)}
           >
             {toggle ? (
-              <FontAwesomeIcon icon={faArrowLeft} />
+              <FontAwesomeIcon icon={faArrowLeft} /> 
             ) : (
               <FontAwesomeIcon icon={faArrowRight} />
             )}
