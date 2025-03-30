@@ -6,6 +6,7 @@ export interface IProject {
     title: string;
     image: string;
     url: string;
+    git: string,
     description?: string;
     descriptionUno?: string;
     descriptionDos?: string;

@@ -47,9 +47,9 @@
   }
 }
 
-@media screen and (min-width: 30px) and (max-width: 564px) {
+@media (300px <= width <= 660px) {
   .box-targeta {
-    width: 48%;
+    width: 90%;
 
     & .contenedor-target {
       & img {

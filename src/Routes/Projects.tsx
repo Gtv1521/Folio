@@ -8,6 +8,7 @@ function allTarget(projects: any) {
       id={app.id}
       image={app.image}
       url={app.url}
+      git={app.git}
       title={app.title}
       description={app.description}
       descriptionUno={app.descriptionUno}
