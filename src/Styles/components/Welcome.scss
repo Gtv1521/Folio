@@ -10,6 +10,7 @@
   font-weight: 500;
   background-color: var.$Primero;
   padding: 20px;
+  text-align: center;
 
   & .title-contact {
     font-style: italic !important;
@@ -29,14 +30,14 @@
     margin: auto;
 
     .box-start {
-      width: 91% !important;
+      width: 91%;
       margin: auto;
-      padding: 10px !important;
+      padding: 10px;
 
       .title-contact {
-        font-size: 19px !important;
+        font-size: 19px ;
         text-align: center;
-        margin: auto !important;
+        margin: auto;
       }
 
       h2 {
